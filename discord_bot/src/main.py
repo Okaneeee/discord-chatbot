@@ -46,12 +46,27 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+## commands
 @client.tree.command(
     name="ping",
     description="Replies with pong"
 )
 async def ping(interaction: discord.Interaction):
-    await interaction.response.send_message(f"Pong! ||with *{round(client.latency * 1000)}ms*||")
+    """Get bot's latency"""
+    await interaction.response.send_message(f"Pong! ||*with {round(client.latency * 1000)}ms*||")
+
+@client.tree.command(
+        name="joined",
+        description="Says when a member joined",
+)
+@app_commands.describe(member='The member you want to get the joined date from; defaults to the user who uses the command')
+async def joined(interaction: discord.Interaction, member: Optional[discord.Member] = None):
+    """Says when a member joined."""
+    # If no member is explicitly provided then we use the command user here
+    member = member or interaction.user # type: ignore --- no error here
+
+    # The format_dt function formats the date time into a human readable representation in the official client
+    await interaction.response.send_message(f'{member} joined {discord.utils.format_dt(member.joined_at)}') # type: ignore --- no error here either
 
 client.tree.copy_global_to(guild=GUILD)
 
