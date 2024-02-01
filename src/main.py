@@ -22,7 +22,9 @@ from neuralintents import BasicAssistant
 load_dotenv()
 
 chatbot = BasicAssistant('./src/json/intents.json')
+print("[INFO] Training model...")
 chatbot.fit_model()
+print("[INFO] Saving model...")
 chatbot.save_model()
 
 ## const
