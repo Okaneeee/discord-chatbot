@@ -5,7 +5,9 @@ from discord.ext import commands
 from discord import app_commands
 
 ## stuff
-# from random import randint
+from random import randint
+from consts import SONGS
+from typing import Optional
 # import requests
 
 ## os & env
@@ -25,18 +27,18 @@ PRFX: str = ""
 if not TOKEN :
     sys.exit("Undefined token")
 
-## discord setup
+## discord client setup
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = commands.Bot(PRFX, intents=intents)
+client = commands.Bot(PRFX, intents=intents, activity=discord.Activity(type=discord.ActivityType.listening, name=SONGS[randint(0, len(SONGS)-1)]))
 
-print("Bot is starting...")
+print("[INFO] Bot is starting...")
 
 # -- bot
 @client.event
 async def on_ready():
-    print('We have successfully loggged in as {0.user}'.format(client))
+    print('[INFO] Successfully loggged in as {0.user}'.format(client))
     sys.stdout.flush()
     await client.tree.sync(guild=GUILD)
 
