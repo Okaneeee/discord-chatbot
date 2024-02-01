@@ -45,10 +45,6 @@ async def on_message(message):
     # Ignore self
     if message.author == client.user:
         return
-    
-    if message.author.id == 430416407554031616 and message.content.lower() == "sync":
-        await message.channel.send("Synced!")
-        return
 
 @client.tree.command(
     name="ping",
