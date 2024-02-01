@@ -15,17 +15,27 @@ import sys
 from os import getenv
 from dotenv import load_dotenv
 
+## neural network
+from neuralintents import BasicAssistant
+
 # -- config
 load_dotenv()
 
+chatbot = BasicAssistant('./src/json/intents.json')
+chatbot.fit_model()
+chatbot.save_model()
+
 ## const
-TOKEN = getenv('TOKEN')
+TOKEN = getenv('TOKEN') # bot token
+OWNER = getenv('OWNER') # owner id
 GUILD = discord.Object(id=int(getenv('GUILD'))) # type: ignore
 
-PRFX: str = ""
+PRFX: str = "$ai"
 
-if not TOKEN :
+if not TOKEN:
     sys.exit("Undefined token")
+if not OWNER:
+    sys.exit("Undefined owner")
 
 ## discord client setup
 intents = discord.Intents.default()
@@ -47,6 +57,10 @@ async def on_message(message):
     # Ignore self
     if message.author == client.user:
         return
+    
+    if message.content.startswith(PRFX):
+        response = chatbot.process_input(message.content[4:])
+        await message.channel.send(response)
 
 ## commands
 @client.tree.command(
