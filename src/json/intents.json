@@ -19,6 +19,11 @@
      "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities"],
      "context_set": ""
      },
+     {"tag": "owner",
+      "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
+      "responses": ["I was created by Okane! Check him on [github](https://github.com/Okaneeee)!"],
+      "context_set": ""
+      },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "Awesome, thanks", "ty", "tysm", "Thank you so much", "Thank you very much", "Thanks a lot"],
      "responses": ["Any time!", "My pleasure", "You are welcome", "Sure dude", "No problem", "You're welcome"],
