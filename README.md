@@ -1,6 +1,27 @@
 # 🤖 Discord Chatbot
 
-A simple chatbot for Discord using Python and the [Discord.py](https://discordpy.readthedocs.io/en/stable/) library. The chatbot is using the [NeuralIntents](https://github.com/NeuralNine/neuralintents/) library for neural networks and training. 
+A simple chatbot for Discord using Python and the [Discord.py](https://discordpy.readthedocs.io/en/stable/) library. </br>
+The chatbot is using the [NeuralIntents](https://github.com/NeuralNine/neuralintents/) library for neural networks and training. It is a small-scale neural network with a small dataset.*</br>
+The chatbot is also using the [Urban Dictionary API](https://unofficialurbandictionaryapi.com) to search for some information on the internet.\*
+
+**It's not always accurate, it's made for personal and educational purposes. Use it at your own risk.*
+
+## Table of Content
+<details>
+  <summary> Click me!</summary>
+
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Quick Start](#quick-start)
+  - [Features](#features)
+  - [Examples](#examples)
+    - [⚜️ Slash commands](#-slash-commands)
+    - [🤖 Chatbot](#-chatbot)
+    - [🔎 Searching](#-searching)
+  - [Inspiration and sources](#inspiration-and-sources)
+  - [Copyrights](#copyrights)
+
+</details>
 
 ## Getting Started
 
@@ -63,9 +84,9 @@ python main.py
 ## Inspiration and sources
 This project was inspired by the [NeuralNine's video](https://youtu.be/urlkrueSXpI) on how to create a chatbot using Python and Deep Learning. </br>
 You can also look at tatiblockchain's [python deep learning chatbot](https://github.com/tatiblockchain/python-deep-learning-chatbot) for a similar project using Flask. </br>
-Some part are written by [GitHub Copilot](https://copilot.github.com/).
+Some part are written with the help of [GitHub Copilot](https://copilot.github.com/).
 
-## Copyright
+## Copyrights
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.</br>
 
 Copyright © 2024 Okane
