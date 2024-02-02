@@ -5,28 +5,28 @@
       "context_set": ""
     },
     {"tag": "goodbye",
-      "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a Good day", "bye", "cao", "see ya"],
-      "responses": ["Sad to see you go", "Talk to you later", "Goodbye!", "See you next time!", "See you soon!", "Take care!"],
+      "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a Good day", "bye", "cao", "see ya", "I'm off", "I'm out", "I'm leaving", "I'm going"],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!", "See you next time!", "See you soon!", "Take care!"],
       "context_set": ""
     },
     {"tag": "feelings",
       "patterns": ["How are you", "How are you doing", "How do you do", "What's up", "How are you today", "How are you feeling", "wassup"],
-      "responses": ["I'm doing good, how about you ?", "I am doing well", "I am doing well, thanks for asking!", "I am doing well, how about you?"],
+      "responses": ["I'm doing good, how about you ?", "I'm doing well!", "I'm doing well, thanks for asking!", "I'm doing well, how about you?"],
       "context_set": ""
     },
     {"tag": "purpose",
      "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What are you", "Who are you"],
-     "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities"],
+     "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities."],
      "context_set": ""
      },
      {"tag": "owner",
       "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
-      "responses": ["I was created by Okane! Check him on [github](https://github.com/Okaneeee)!"],
+      "responses": ["I was created by Okane! Check him out on [github](https://github.com/Okaneeee)!"],
       "context_set": ""
       },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "Awesome, thanks", "ty", "tysm", "Thank you so much", "Thank you very much", "Thanks a lot"],
-     "responses": ["Any time!", "My pleasure", "You are welcome", "Sure dude", "No problem", "You're welcome"],
+     "responses": ["Any time!", "My pleasure!", "You are welcome!", "Sure dude!", "No problem!", "You're welcome!"],
      "context_set": ""
     },
     {"tag": "help",
@@ -35,8 +35,8 @@
      "context_set": ""
     },
     {"tag": "noanswer",
-     "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "I am not sure what you are asking for", "I am not sure what you are asking for, can you please provide more info?"],
+     "patterns": ["", " ", "** **", "* *"],
+     "responses": ["Sorry, can't understand you...", "Please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
      "context_set": ""
      }
   ]
