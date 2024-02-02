@@ -31,15 +31,16 @@ chatbot.save_model()
 
 ## const
 TOKEN = getenv('TOKEN') # bot token
-OWNER = getenv('OWNER') # owner id
+OWNID = getenv('OWNID') # own id
 GUILD = discord.Object(id=int(getenv('GUILD'))) # type: ignore
 
-PRFX: str = "$ai"
 
 if not TOKEN:
     sys.exit("Undefined token")
-if not OWNER:
-    sys.exit("Undefined owner")
+if not OWNID:
+    sys.exit("Undefined ID")
+
+PRFX: str = f"<@{OWNID}>"
 
 ## discord client setup
 intents = discord.Intents.default()
@@ -64,7 +65,7 @@ async def on_message(message):
         return
     
     if message.content.startswith(PRFX):
-        cb_response = chatbot.process_input(message.content[4:])
+        cb_response = chatbot.process_input(message.content[len(PRFX):])
         try:
             await message.channel.send(which_function(cb_response, message.content[4:])) # type: ignore --- no error here
         except ModuleNotFoundError:
