@@ -19,4 +19,7 @@ SONGS: list[str] = ["Chocolat Cadabra - Ado",
                     "KICK BACK - Kenshi Yonezu",
                     "Drink, Pray, Love! - Yuinishio",
                     "Gokusaishiki - REOL",
+                    "REALiZE - LiSA",
+                    "Crime and Punishment - Ado",
+                    "怪物 - YOASOBI",
                     ]
