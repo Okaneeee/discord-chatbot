@@ -38,6 +38,11 @@
      "patterns": ["", " ", "** **", "* *"],
      "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
      "context_set": ""
-     }
+     },
+     {"tag": "wiki",
+      "patterns": ["What is", "What's", "Can you give me information about", "Can you tell me about", "Can you tell me what is", "Can you tell me what's", "Can you tell me what are", "Tell me about"],
+      "responses": ["wikisearch"],
+      "context_set": ""
+      }
   ]
 }

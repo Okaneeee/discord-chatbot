@@ -6,9 +6,11 @@ from discord import app_commands
 
 ## stuff
 from random import randint
-from consts import SONGS
 from typing import Optional
-# import requests
+
+## other programs
+from consts import SONGS
+from func import which_function
 
 ## os & env
 import sys
@@ -62,8 +64,11 @@ async def on_message(message):
         return
     
     if message.content.startswith(PRFX):
-        response = chatbot.process_input(message.content[4:])
-        await message.channel.send(response)
+        cb_response = chatbot.process_input(message.content[4:])
+        try:
+            await message.channel.send(which_function(cb_response, message.content[4:])) # type: ignore --- no error here
+        except ModuleNotFoundError:
+            await message.channel.send(cb_response)
 
 ## commands
 @client.tree.command(
@@ -85,7 +90,10 @@ async def joined(interaction: discord.Interaction, member: Optional[discord.Memb
     member = member or interaction.user # type: ignore --- no error here
 
     # The format_dt function formats the date time into a human readable representation in the official client
-    await interaction.response.send_message(f'{member} joined {discord.utils.format_dt(member.joined_at)}') # type: ignore --- no error here either
+    try:
+        await interaction.response.send_message(f'{member} joined {discord.utils.format_dt(member.joined_at)}') # type: ignore --- no error here either
+    except discord.errors.NotFound or discord.app_commands.errors.CommandInvokeError:
+        await interaction.response.send_message(f"An error occurred...", ephemeral=True)
 
 client.tree.copy_global_to(guild=GUILD)
 
