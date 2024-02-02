@@ -6,7 +6,7 @@
     },
     {"tag": "goodbye",
       "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a Good day", "bye", "cao", "see ya"],
-      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!", "See you next time!", "See you soon!", "Take care!"],
+      "responses": ["Sad to see you go", "Talk to you later", "Goodbye!", "See you next time!", "See you soon!", "Take care!"],
       "context_set": ""
     },
     {"tag": "feelings",
@@ -15,8 +15,8 @@
       "context_set": ""
     },
     {"tag": "purpose",
-     "patterns": [],
-     "responses": [],
+     "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What are you", "Who are you"],
+     "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities"],
      "context_set": ""
      },
     {"tag": "thanks",
