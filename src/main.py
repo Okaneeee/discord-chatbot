@@ -51,6 +51,7 @@ print("[INFO] Bot is starting...")
 @client.event
 async def on_ready():
     print('[INFO] Successfully loggged in as {0.user}'.format(client))
+    print('[DEBUG] ID: {0.user.id}'.format(client))
     sys.stdout.flush()
     await client.tree.sync(guild=GUILD)
 
