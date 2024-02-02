@@ -36,7 +36,7 @@
     },
     {"tag": "noanswer",
      "patterns": ["", " ", "** **", "* *"],
-     "responses": ["Sorry, can't understand you...", "Please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
+     "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
      "context_set": ""
      }
   ]
