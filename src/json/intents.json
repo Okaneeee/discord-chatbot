@@ -40,7 +40,7 @@
      "context_set": ""
      },
      {"tag": "wiki",
-      "patterns": ["What is", "What's", "Can you give me information about", "Can you tell me about", "Can you tell me what is", "Can you tell me what's", "Can you tell me what are", "Tell me about"],
+      "patterns": ["What is", "What's", "Can you give me information about", "Can you tell me about", "Can you tell me what is", "Can you tell me what's", "Can you tell me what are", "Tell me about", "What's a", "What is a", "Whats a"],
       "responses": ["wikisearch"],
       "context_set": ""
       }
