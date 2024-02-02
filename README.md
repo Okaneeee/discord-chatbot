@@ -88,5 +88,6 @@ Some part are written with the help of [GitHub Copilot](https://copilot.github.c
 
 ## Copyrights
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.</br>
+This include all contributions to the project, even from the community.
 
 Copyright © 2024 Okane
