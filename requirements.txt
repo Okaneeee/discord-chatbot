@@ -1,0 +1,4 @@
+requests==2.31.0
+discord==2.3.2
+python-dotenv==1.0.1
+neuralintents==0.1.0
