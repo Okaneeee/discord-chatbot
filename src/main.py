@@ -25,7 +25,7 @@ load_dotenv()
 
 chatbot = BasicAssistant('./src/json/intents.json')
 print("[INFO] Training model...")
-chatbot.fit_model()
+chatbot.fit_model(epochs=400)
 print("[INFO] Saving model...")
 chatbot.save_model()
 
