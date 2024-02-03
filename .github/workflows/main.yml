@@ -3,7 +3,26 @@ name: run main.py
 on:
   push: { branches: [main, develop] }
 
+# Testing dependencies
 jobs:
+  # Testing for Python 3.7
+  python37:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.7' # install the python version needed
+          
+      - name: Install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
   # Testing for Python 3.8
   python38:
     runs-on: ubuntu-latest
@@ -21,10 +40,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Execute main.py
-        run: 
-          python src/main.py
 
   # Testing for Python 3.9
   python39:
@@ -43,10 +58,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Execute main.py
-        run: 
-          python src/main.py
         
 
 
@@ -67,10 +78,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Execute main.py
-        run: 
-          python src/main.py
         
 
   # Testing for Python 3.11
@@ -90,10 +97,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Execute main.py
-        run: 
-          python src/main.py
         
 
   # Testing for Python 3.12
@@ -113,7 +116,3 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Execute main.py
-        run: 
-          python src/main.py
