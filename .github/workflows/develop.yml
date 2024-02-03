@@ -1,7 +1,7 @@
-name: Check dependencies availability (main)
+name: Check dependencies availability (dev)
 
 on:
-  push: { branches: [main] }
+  push: { branches: [develop] }
 
 # Testing dependencies
 jobs:
