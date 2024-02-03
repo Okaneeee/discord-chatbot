@@ -31,7 +31,7 @@
     },
     {"tag": "owner",
     "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
-    "responses": ["I was created by Okane! Check him out on [github](https://github.com/Okaneeee)!"],
+    "responses": ["I was created by Okane! Check him out on [github](<https://github.com/Okaneeee>)!"],
     "context_set": ""
     },
     {"tag": "thanks",
@@ -61,7 +61,7 @@
     },
     {"tag": "BugOrFeedback",
      "patterns": ["How do I report a bug", "There is a bug", "There are bugs", "How can I provide feedback", "Can I suggest new features", "I have a suggestion", "I have a feature request", "I have a feedback", "I have a bug report", "I have a bug", "I have a problem", "I have an issue"],
-     "responses": ["If you have any feedback, suggestions, or bug reports, you can report/share them with an [issue on my Github page](https://github.com/Okaneeee/discord-chatbot/issues/new). My creator will try to help you as best as he can."],
+     "responses": ["If you have any feedback, suggestions, or bug reports, you can report/share them with an [issue on my Github page](<https://github.com/Okaneeee/discord-chatbot/issues/new>). My creator will try to help you as best as he can."],
      "context_set": ""
     },
     {"tag": "privacy",
