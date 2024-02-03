@@ -1,0 +1,26 @@
+name: Check dependencies PY3.11 
+
+on:
+  push: { branches: [develop] }
+  schedule:
+    - cron: '0 0 * * 1' # At 00:00 on Monday
+
+# Testing dependencies
+jobs:
+  # Testing for Python 3.11
+  python311:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v4 # checkout the repository content to github runner
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # install the python version needed
+          
+      - name: Install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
