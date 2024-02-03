@@ -70,7 +70,7 @@ async def on_message(message):
     if message.content.startswith(PRFX):
         cb_response = chatbot.process_input(message.content[len(PRFX):])
         try:
-            await message.channel.send(which_function(cb_response, message.content[4:])) # type: ignore --- no error here
+            await message.channel.send(which_function(cb_response, message.content[len(PRFX):])) # type: ignore --- no error here
         except ModuleNotFoundError:
             await message.channel.send(cb_response)
 
