@@ -13,6 +13,7 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
   - [Getting Started](#getting-started)
     - [Installation](#installation)
     - [Quick Start](#quick-start)
+  - [Project Status](#project-status)
   - [Features](#features)
   - [Examples](#examples)
     - [⚜️ Slash commands](#-slash-commands)
@@ -59,6 +60,22 @@ Finally, you can run the bot by running the following command:
 ```bash
 python main.py
 ```
+
+## Project Status
+
+<details>
+  <summary> The repo's dependencies are tested with the following versions of Python: </summary>
+
+| Version             | Done | Status |
+|-------------------------|------|--------|
+| Python 3.7 | ❌ | Too old |
+| Python 3.8 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python38.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python38.yml) |
+| Python 3.9 | ✔ | [![Python 3.9](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python39.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python39.yml) |
+| Python 3.10 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python310.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python310.yml) |
+| Python 3.11 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml) |
+| Python 3.12 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml) |
+
+</details>
 
 ## Features
 
