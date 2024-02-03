@@ -1,4 +1,9 @@
 {"intents": [
+    {"tag": "noanswer",
+    "patterns": ["", " ", "** **", "* *", "_ _"],
+    "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
+    "context_set": ""
+    },
     {"tag": "greetings",
       "patterns": ["Hi", "Sup", "Hello", "Good morning", "Hey", "Greetings"],
       "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "What's up?", "Hey!", "Hello, how can I help you?"],
@@ -14,11 +19,16 @@
       "responses": ["I'm doing good, how about you ?", "I'm doing well!", "I'm doing well, thanks for asking!", "I'm doing well, how about you?"],
       "context_set": ""
     },
-    {"tag": "purpose",
-     "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What are you", "Who are you"],
+    {"tag": "identity",
+     "patterns": ["What are you", "Who are you", "Can you tell me a bit about yourself"],
      "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities."],
      "context_set": ""
      },
+     {"tag": "purpose",
+      "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What is your function", "What is your role", "What is your job", "What is your purpose in this server", "What is your purpose in this discord server", "What is your purpose in this discord"],
+      "responses": ["For now, I can only do some tasks like answering basic questions and looking for definitions on UrbanDictionary. I'm still learning and I hope to be able to do more in the future!"],
+      "context_set": ""
+      },
      {"tag": "owner",
       "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
       "responses": ["I was created by Okane! Check him out on [github](https://github.com/Okaneeee)!"],
@@ -29,16 +39,16 @@
      "responses": ["Any time!", "My pleasure!", "You are welcome!", "Sure dude!", "No problem!", "You're welcome!"],
      "context_set": ""
     },
+    {"tag": "amistupid",
+    "patterns": ["Are you dumb", "Are you stupid", "Are you an idiot", "I'm trying to know if you're stupid", "I'm trying to know if you're dumb", "I'm trying to know if you're an idiot", "I'm trying to know if you're an idiot or not"],
+    "responses": ["I'm sorry that you feel that way. I'm just a bot and I'm trying to help you as best as I can. I'm not perfect and I'm still learning. I hope you can understand that."],
+    "context_set": ""
+    },
     {"tag": "help",
      "patterns": ["That's helpful", "Thanks for helping me", "Thanks for the help", "Thank you for the help", "Thank you for helping me", "Thank you for the support", "Thanks for the support"],
      "responses": ["Happy to help!", "Any time!", "My pleasure", "Sure dude", "No problem"],
      "context_set": ""
     },
-    {"tag": "noanswer",
-     "patterns": ["", " ", "** **", "* *"],
-     "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
-     "context_set": ""
-     },
      {"tag": "wiki",
       "patterns": ["What is", "What's", "Can you give me information about", "Can you tell me about", "Can you tell me what is", "Can you tell me what's", "Can you tell me what are", "Tell me about", "What's a", "What is a", "Whats a", "Who is", "Who's"],
       "responses": ["wikisearch"],
