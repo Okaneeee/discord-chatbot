@@ -1,4 +1,4 @@
-name: run main.py
+name: Check dependencies availability 
 
 on:
   push: { branches: [main, develop] }
