@@ -1,4 +1,5 @@
-name: Check dependencies PY3.12 
+# Check dependencies for PY3.12
+name: Python 3.12
 
 on:
   push: { branches: [develop] }
