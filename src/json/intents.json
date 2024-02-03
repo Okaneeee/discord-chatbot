@@ -1,4 +1,9 @@
 {"intents": [
+    {"tag": "noanswer",
+    "patterns": ["", " ", "** **", "* *", "_ _"],
+    "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
+    "context_set": ""
+    },
     {"tag": "greetings",
       "patterns": ["Hi", "Sup", "Hello", "Good morning", "Hey", "Greetings"],
       "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "What's up?", "Hey!", "Hello, how can I help you?"],
@@ -14,35 +19,65 @@
       "responses": ["I'm doing good, how about you ?", "I'm doing well!", "I'm doing well, thanks for asking!", "I'm doing well, how about you?"],
       "context_set": ""
     },
-    {"tag": "purpose",
-     "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What are you", "Who are you"],
+    {"tag": "identity",
+     "patterns": ["What are you", "Who are you", "Can you tell me a bit about yourself"],
      "responses": ["I'm a small-scale neural network discord chatbot! I'll be glad to help you if it's within my capabilities."],
      "context_set": ""
-     },
-     {"tag": "owner",
-      "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
-      "responses": ["I was created by Okane! Check him out on [github](https://github.com/Okaneeee)!"],
-      "context_set": ""
-      },
+    },
+    {"tag": "purpose",
+    "patterns": ["What is your purpose", "How can you help me", "What can you do" , "What are you for", "What is your use", "What is your function", "What is your role", "What is your job", "What is your purpose in this server", "What is your purpose in this discord server", "What is your purpose in this discord"],
+    "responses": ["For now, I can only do some tasks like answering basic questions and looking for definitions on UrbanDictionary. I'm still learning and I hope to be able to do more in the future!"],
+    "context_set": ""
+    },
+    {"tag": "owner",
+    "patterns": ["Who is your creator", "Who made you", "Who is your owner", "Who is your developer", "Who is your father", "Who is your maker"],
+    "responses": ["I was created by Okane! Check him out on [github](https://github.com/Okaneeee)!"],
+    "context_set": ""
+    },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "Awesome, thanks", "ty", "tysm", "Thank you so much", "Thank you very much", "Thanks a lot"],
      "responses": ["Any time!", "My pleasure!", "You are welcome!", "Sure dude!", "No problem!", "You're welcome!"],
      "context_set": ""
+    },
+    {"tag": "amistupid",
+    "patterns": ["Are you dumb", "Are you stupid", "Are you an idiot", "I'm trying to know if you're stupid", "I'm trying to know if you're dumb", "I'm trying to know if you're an idiot", "I'm trying to know if you're an idiot or not"],
+    "responses": ["I'm sorry that you feel that way. I'm just a bot and I'm trying to help you as best as I can. I'm not perfect and I'm still learning. I hope you can understand that."],
+    "context_set": ""
     },
     {"tag": "help",
      "patterns": ["That's helpful", "Thanks for helping me", "Thanks for the help", "Thank you for the help", "Thank you for helping me", "Thank you for the support", "Thanks for the support"],
      "responses": ["Happy to help!", "Any time!", "My pleasure", "Sure dude", "No problem"],
      "context_set": ""
     },
-    {"tag": "noanswer",
-     "patterns": ["", " ", "** **", "* *"],
-     "responses": ["Sorry, I can't understand you...", "I don't understand, please give me more info.", "I'm not sure what you are asking for.", "I'm not sure what you are asking for, can you please provide more info?"],
-     "context_set": ""
-     },
      {"tag": "wiki",
       "patterns": ["What is", "What's", "Can you give me information about", "Can you tell me about", "Can you tell me what is", "Can you tell me what's", "Can you tell me what are", "Tell me about", "What's a", "What is a", "Whats a", "Who is", "Who's"],
       "responses": ["wikisearch"],
       "context_set": ""
-      }
+    },
+    {"tag": "human",
+     "patterns": ["Are you a human", "Are you a bot", "Are you a person", "Are you a real person", "Are you a real human", "Are you a real person or a bot", "Are you a real human or a bot"],
+     "responses": ["I'm a bot, not a human. I'm here to help you as best as I can."],
+     "context_set": ""
+    },
+    {"tag": "BugOrFeedback",
+     "patterns": ["How do I report a bug", "There is a bug", "There are bugs", "How can I provide feedback", "Can I suggest new features", "I have a suggestion", "I have a feature request", "I have a feedback", "I have a bug report", "I have a bug", "I have a problem", "I have an issue"],
+     "responses": ["If you have any feedback, suggestions, or bug reports, you can report/share them with an [issue on my Github page](https://github.com/Okaneeee/discord-chatbot/issues/new). My creator will try to help you as best as he can."],
+     "context_set": ""
+    },
+    {"tag": "privacy",
+     "patterns": ["How do you handle my personal information", "How do you handle my data", "How do you handle my personal data", "Is my data secure", "Are my informations secure", "Is my data safe", "Are my informations safe"],
+     "responses": ["As I can't handle the context of conversations ||at least, for now||, I don't and I can't store any personal data. The only data I have is my training data."],
+     "context_set": ""
+    },
+    {"tag": "language",
+     "patterns": ["What languages do you speak", "What languages do you understand", "What languages do you know", "What languages can you speak", "What languages can you understand"],
+     "responses": ["I can only understand and speak English for now!"],
+     "context_set": ""
+    },
+    {"tag": "changelanguage",
+     "patterns": ["Can I change your language", "Do you speak another language", "Can you speak another language", "Can you understand another language", "Can you understand other languages", "Can you speak other languages", "Can you understand other languages"],
+     "responses": ["Sadly, not at the moment. I can only understand and speak English."],
+     "context_set": ""
+    }
   ]
 }
