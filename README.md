@@ -28,6 +28,34 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
 
 ### Installation
 
+<details>
+  <summary> Instructions for cloning with git </summary>
+
+  - Open a terminal and navigate to the directory where you want to clone the repo.
+  - Run the following commands:
+  ```bash
+  git clone https://github.com/Okaneeee/discord-chatbot.git
+  cd discord-chatbot
+  ```
+
+</details>
+
+</br>
+
+<details>
+  <summary> Instructions for downloading the zip </summary>
+
+  - Click on the green `Code` button and select `Download ZIP`. Or click [here](https://github.com/Okaneeee/discord-chatbot/archive/refs/heads/main.zip)
+  - Extract the zip file to the directory where you want to clone the repo.
+  - Open a terminal in the folder where you extracted the zip file and run the following command:
+  ```bash
+  cd discord-chatbot
+  ```
+
+</details>
+
+</br>
+
 This repo was made with Python ``3.11.7``. You can check the working versions of Python for this repo [here](#project-status). </br>
 
 The repo uses some dependencies. You can install them by running the following command:
