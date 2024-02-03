@@ -58,7 +58,7 @@ After, you'll need to [add your bot to your server](https://discord.com/develope
 Finally, you can run the bot by running the following command:
 
 ```bash
-python main.py
+python src/main.py
 ```
 
 ## Project Status
