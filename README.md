@@ -8,7 +8,7 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
 
 ## Table of Content
 <details>
-  <summary> Click me!</summary>
+  <summary> Click me! </summary>
 
   - [Getting Started](#getting-started)
     - [Installation](#installation)
@@ -72,14 +72,32 @@ python main.py
 ## Examples:
 
 ### ⚜️ Slash commands
+
+<details>
+<summary> Example </summary>
+
 ![Slash commands](./img/ie_slash.png)
 
+</details>
+
 ### 🤖 Chatbot
+
+<details>
+<summary> Example </summary>
+
 ![Chatbot](./img/ie_chatting.png)
 
+</details>
+
 ### 🔎 Searching
+
+<details>
+<summary> Examples </summary>
+
 ![Searching 1](./img/ie_search1.png)
 ![Searching 2](./img/ie_search2.png)
+
+</details>
 
 ## Inspiration and sources
 This project was inspired by the [NeuralNine's video](https://youtu.be/urlkrueSXpI) on how to create a chatbot using Python and Deep Learning. </br>
