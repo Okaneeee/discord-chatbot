@@ -23,7 +23,10 @@ from neuralintents import BasicAssistant
 # -- config
 load_dotenv()
 
-chatbot = BasicAssistant('./src/json/intents.json')
+try:
+    chatbot = BasicAssistant('./src/json/intents.json')
+except FileNotFoundError:
+    chatbot = BasicAssistant('../src/json/intents.json')
 print("[INFO] Training model...")
 chatbot.fit_model()
 print("[INFO] Saving model...")
