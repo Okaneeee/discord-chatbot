@@ -1,5 +1,4 @@
 import requests
-from string import capwords
 
 def wikisearch(query: str):
     """Searches wikipedia for a given query and returns the first paragraph of the article.
@@ -16,8 +15,11 @@ def wikisearch(query: str):
     data: dict = response.json()
 
     # Exctracting the interesting data
-    text: str = data[list(data.keys())[0]][0]['definition']
-    permalink: str = data[list(data.keys())[0]][0]['permalink']
+    try:
+        text: str = data[list(data.keys())[0]][0]['definition']
+        permalink: str = data[list(data.keys())[0]][0]['permalink']
+    except IndexError:
+        return "I'm not sure what you're looking for. Try to be more specific."
     if text is None: # Checking if the article exists
         return "I'm not sure what you're looking for. Try to be more specific."
     text= text.translate({ord(i): None for i in '[](){}'}) # Removing brackets
@@ -34,7 +36,6 @@ def which_function(func_to_call: str, query: str):
     """
     done: bool = False
     query = query.translate({ord(i): None for i in '!.?:;,'})
-    query = capwords(query)
 
     if func_to_call == 'wikisearch':
         i = 1
