@@ -34,13 +34,12 @@ TOKEN = getenv('TOKEN') # bot token
 OWNID = getenv('OWNID') # own id
 GUILD = discord.Object(id=int(getenv('GUILD'))) # type: ignore
 
-
 if not TOKEN:
     sys.exit("Undefined token")
-if not OWNID:
+if not OWNID: # NOTE: Remove if changing prefix
     sys.exit("Undefined ID")
 
-PRFX: str = f"<@{OWNID}>"
+PRFX: str = f"<@{OWNID}>" # NOTE: Edit if changing prefix
 
 ## discord client setup
 intents = discord.Intents.default()
@@ -67,7 +66,7 @@ async def on_message(message):
     if message.content.startswith(PRFX):
         cb_response = chatbot.process_input(message.content[len(PRFX):])
         try:
-            await message.channel.send(which_function(cb_response, message.content[4:])) # type: ignore --- no error here
+            await message.channel.send(which_function(cb_response, message.content[len(PRFX):])) # type: ignore --- no error here
         except ModuleNotFoundError:
             await message.channel.send(cb_response)
 
