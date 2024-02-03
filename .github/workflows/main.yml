@@ -23,7 +23,9 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python main.py
+        run: |
+          cd src
+          python main.py
 
   # Testing for Python 3.9
   python39:
@@ -44,7 +46,9 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python main.py
+        run: |
+          cd src
+          python main.py
         
 
 
@@ -67,7 +71,9 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python main.py
+        run: |
+          cd src
+          python main.py
         
 
   # Testing for Python 3.11
@@ -89,7 +95,9 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python main.py
+        run: |
+          cd src
+          python main.py
         
 
   # Testing for Python 3.12
@@ -111,4 +119,6 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python main.py
+        run: |
+          cd src
+          python main.py
