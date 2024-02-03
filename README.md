@@ -28,7 +28,7 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
 
 ### Installation
 
-This repo works with Python ``3.11.7``. It might not work with a higher version of Python.
+This repo was made with Python ``3.11.7``. You can check the working versions of Python for this repo [here](#project-status). </br>
 
 The repo uses some dependencies. You can install them by running the following command:
 ```bash
