@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ### Quick Start
-You'll need to setup a `.env` file first. The `.env` need to be on the same folder as the repo. You can use this template.
+You'll need to setup a `.env` file first. The `.env` need to be on the same folder as the repo. You can use the following template, or you can rename the [`.env.example`](./.env.example) file to `.env`.
 
 ```env
 TOKEN =
