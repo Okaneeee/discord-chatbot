@@ -16,14 +16,15 @@ class Logger:
     def __init__(self, file_name: str = "bot.log", folder: str = "logs"):
         mkdir_p(str(folder))
         self.log_path = f'{folder}/{file_name}'
-        logging.basicConfig(format='%(levelname)s | %(asctime)s - %(message)s', datefmt='%Y-%m-%d (%a) %H:%M:%S', filename=self.log_path, filemode='w', level=logging.INFO)
+
+        logging.root.handlers = []
+        logging.basicConfig(format='%(levelname)s | %(asctime)s - %(message)s', datefmt='%Y-%m-%d (%a) %H:%M:%S', level=logging.INFO, handlers=[logging.StreamHandler(), logging.FileHandler(self.log_path)])
 
     
     def __debug(self, message: str):
         """Log a debug message
         """
         logging.debug(message)
-        print(message)
 
     def __info(self, message: str):
         """Log an info message
@@ -35,19 +36,16 @@ class Logger:
         """Log a warning message
         """
         logging.warning(message)
-        print(message)
 
     def __error(self, message: str):
         """Log an error message
         """
         logging.error(message)
-        print(message)
 
     def __critical(self, message: str):
         """Log a critical message
         """
         logging.critical(message)
-        print(message)
 
     def makeLog(self, message: str, level: str):
         """Make a log message
