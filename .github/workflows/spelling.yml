@@ -3,10 +3,10 @@ name: Spelling
 on:
   push:
     paths-ignore:
-      - '**/consts.py'
+      - '**/src/consts.py'
   pull_request:
     paths-ignore:
-      - '**/consts.py'
+      - '**/src/consts.py'
 
 
 jobs:
