@@ -1,6 +1,13 @@
 name: Spelling
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - '**/consts.py'
+  pull_request:
+    paths-ignore:
+      - '**/consts.py'
+
 
 jobs:
   typos:
