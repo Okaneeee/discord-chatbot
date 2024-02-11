@@ -40,15 +40,14 @@ TOKEN = getenv('TOKEN') # bot token
 OWNID = getenv('OWNID') # own id
 GUILD = discord.Object(id=int(getenv('GUILD'))) # type: ignore
 
-
 if not TOKEN:
     LOGGER.makeLog("Undefined token", "CRITICAL")
     sys.exit("Undefined token")
-if not OWNID:
+if not OWNID: # NOTE: Remove if changing prefix
     LOGGER.makeLog("Undefined ID", "CRITICAL")
     sys.exit("Undefined ID")
 
-PRFX: str = f"<@{OWNID}>"
+PRFX: str = f"<@{OWNID}>" # NOTE: Edit if changing prefix
 
 ## discord client setup
 intents = discord.Intents.default()
