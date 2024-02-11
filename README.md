@@ -105,6 +105,11 @@ python src/main.py
 
 </details>
 
+| Actions             | Done | Status |
+|-------------------------|------|--------|
+| Spelling | ✔ | [![Spelling](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml) |
+| CodeQL | ✔ | [![CodeQL](https://github.com/Okaneeee/discord-chatbot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/codeql.yml) |
+
 ## Features
 
 - [x] A `ping` slash command to see the bot's latency *(mostly for testing purposes)*
