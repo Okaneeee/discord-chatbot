@@ -114,9 +114,9 @@ Checking code quality with these actions:
 
 ## Features
 
-- [x] A `ping` slash command to see the bot's latency *(mostly for testing purposes)*
-- [x] A `joined` slash command to see when an user joined the server *(also for testing purposes)*
-- [x] A small-scale chatbot that can answer some questions and search for some information on the internet (using [Urban Dictionary API](https://unofficialurbandictionaryapi.com))*
+- [x] Slash commands
+- [x] A small-scale chatbot that can answer some question*
+- [x] Can search for some information on the internet using the [Urban Dictionary API](https://unofficialurbandictionaryapi.com)*
 </br></br>
 
 **The chatbot is still in development and it's not perfect. It's using a small dataset and it's not trained to answer all questions. It's also not able to understand the context of the conversation. It's a simple chatbot that can answer some questions and search for some information on the internet. The search part is not optimized and is not working everytime.*
