@@ -14,11 +14,14 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
     - [Installation](#installation)
     - [Quick Start](#quick-start)
   - [Project Status](#project-status)
+    - [Dependencies](#dependencies)
+    - [Code quality](#code-quality)
   - [Features](#features)
   - [Examples](#examples)
     - [⚜️ Slash commands](#-slash-commands)
     - [🤖 Chatbot](#-chatbot)
     - [🔎 Searching](#-searching)
+  - [Contributing](#contributing)
   - [Inspiration and sources](#inspiration-and-sources)
   - [Copyrights](#copyrights)
 
@@ -91,8 +94,7 @@ python src/main.py
 
 ## Project Status
 
-<details>
-  <summary> The repo's dependencies are tested with the following versions of Python: </summary>
+### Dependencies:
 
 | Version             | Done | Status |
 |-------------------------|------|--------|
@@ -103,9 +105,8 @@ python src/main.py
 | Python 3.11 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml) |
 | Python 3.12 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml) |
 
-</details>
 
-Checking code quality with these actions:
+### Code quality:
 
 | Actions             | Done | Status |
 |-------------------------|------|--------|
