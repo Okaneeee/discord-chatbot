@@ -14,11 +14,14 @@ The chatbot is also using the [Urban Dictionary API](https://unofficialurbandict
     - [Installation](#installation)
     - [Quick Start](#quick-start)
   - [Project Status](#project-status)
+    - [Dependencies](#dependencies)
+    - [Code quality](#code-quality)
   - [Features](#features)
   - [Examples](#examples)
     - [⚜️ Slash commands](#-slash-commands)
     - [🤖 Chatbot](#-chatbot)
     - [🔎 Searching](#-searching)
+  - [Contributing](#contributing)
   - [Inspiration and sources](#inspiration-and-sources)
   - [Copyrights](#copyrights)
 
@@ -91,8 +94,7 @@ python src/main.py
 
 ## Project Status
 
-<details>
-  <summary> The repo's dependencies are tested with the following versions of Python: </summary>
+### Dependencies:
 
 | Version             | Done | Status |
 |-------------------------|------|--------|
@@ -103,9 +105,8 @@ python src/main.py
 | Python 3.11 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python311.yml) |
 | Python 3.12 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml) |
 
-</details>
 
-Checking code quality with these actions:
+### Code quality:
 
 | Actions             | Done | Status |
 |-------------------------|------|--------|
@@ -114,9 +115,9 @@ Checking code quality with these actions:
 
 ## Features
 
-- [x] A `ping` slash command to see the bot's latency *(mostly for testing purposes)*
-- [x] A `joined` slash command to see when an user joined the server *(also for testing purposes)*
-- [x] A small-scale chatbot that can answer some questions and search for some information on the internet (using [Urban Dictionary API](https://unofficialurbandictionaryapi.com))*
+- [x] Slash commands
+- [x] A small-scale chatbot that can answer some question*
+- [x] Can search for some information on the internet using the [Urban Dictionary API](https://unofficialurbandictionaryapi.com)*
 </br></br>
 
 **The chatbot is still in development and it's not perfect. It's using a small dataset and it's not trained to answer all questions. It's also not able to understand the context of the conversation. It's a simple chatbot that can answer some questions and search for some information on the internet. The search part is not optimized and is not working everytime.*
@@ -150,6 +151,10 @@ Checking code quality with these actions:
 ![Searching 2](./img/ie_search2.png)
 
 </details>
+
+## Contributing
+You are welcome to contribute by following the instructions in the [CONTRIBUTING](CONTRIBUTING.md) file and adhering to the [Code of Conduct](CODE_OF_CONDUCT.md).
+</br>
 
 ## Inspiration and sources
 This project was inspired by the [NeuralNine's video](https://youtu.be/urlkrueSXpI) on how to create a chatbot using Python and Deep Learning. </br>
