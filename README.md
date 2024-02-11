@@ -151,6 +151,10 @@ Checking code quality with these actions:
 
 </details>
 
+## Contributing
+You are welcome to contribute by following the instructions in the [CONTRIBUTING](CONTRIBUTING.md) file and adhering to the [Code of Conduct](CODE_OF_CONDUCT.md).
+</br>
+
 ## Inspiration and sources
 This project was inspired by the [NeuralNine's video](https://youtu.be/urlkrueSXpI) on how to create a chatbot using Python and Deep Learning. </br>
 You can also look at tatiblockchain's [python deep learning chatbot](https://github.com/tatiblockchain/python-deep-learning-chatbot) for a similar project using Flask. </br>
