@@ -72,12 +72,3 @@ class Logger:
                 self.__critical(message)
             case _:
                 raise ValueError("Invalid log level")
-
-
-if __name__ == "__main__":
-    log = Logger()
-    log.makeLog("Test", "info")
-    log.makeLog("Test", "debug")
-    log.makeLog("Test", "warning")
-    log.makeLog("Test", "error")
-    log.makeLog("Test", "critical")
