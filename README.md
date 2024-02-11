@@ -105,6 +105,8 @@ python src/main.py
 
 </details>
 
+Checking code quality with these actions:
+
 | Actions             | Done | Status |
 |-------------------------|------|--------|
 | Spelling | ✔ | [![Spelling](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml) |
