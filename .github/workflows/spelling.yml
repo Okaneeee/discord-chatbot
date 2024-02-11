@@ -1,13 +1,6 @@
 name: Spelling
 
-on:
-  push:
-    paths-ignore:
-      - '**/src/consts.py'
-  pull_request:
-    paths-ignore:
-      - '**/src/consts.py'
-
+on: [push, pull_request]
 
 jobs:
   typos:
@@ -18,3 +11,4 @@ jobs:
         - uses: crate-ci/typos@master
           with:
             files: .
+            config: ./.github/workflows/typos.toml
