@@ -1,2 +1,2 @@
-[files.ignore-files]
+[files]
 extend-exclude = ["../../src/consts.py"]
