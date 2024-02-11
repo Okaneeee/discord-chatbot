@@ -53,6 +53,8 @@ client = commands.Bot(PRFX, intents=intents, activity=discord.Activity(type=disc
 
 print("[INFO] Bot is starting...")
 
+client.activity = discord.Activity(type=discord.ActivityType.listening, name=SONGS[randint(0, len(SONGS)-1)])
+
 # -- bot
 @client.event
 async def on_ready():
@@ -98,6 +100,16 @@ async def joined(interaction: discord.Interaction, member: Optional[discord.Memb
         await interaction.response.send_message(f'{member} joined {discord.utils.format_dt(member.joined_at)}') # type: ignore --- no error here either
     except discord.errors.NotFound or discord.app_commands.errors.CommandInvokeError:
         await interaction.response.send_message(f"An error occurred...", ephemeral=True)
+
+@client.tree.command(
+    name="song",
+    description="Replies with a random song and changes the bot's activity to it"
+)
+async def song(interaction: discord.Interaction):
+    """Get a random song"""
+    r_song = SONGS[randint(0, len(SONGS)-1)]
+    await interaction.response.send_message(f"You should listen to {r_song}!")
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=r_song))
 
 client.tree.copy_global_to(guild=GUILD)
 
