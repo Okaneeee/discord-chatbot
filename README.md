@@ -78,7 +78,7 @@ OWNID =
 **GUILD** is the server ID you want the bot be active on. You can remove this field but you'll need to remove it on the [`main.py`](./src/main.py) file too. </br>
 *More information on how to get your server ID [here](https://support.discord.com/hc/en-us/articles/206346498).*
 
-**OWNID** is the bot's ID. It is used as a prefix for the bot (when you're mentionning (@) it). You can remove this field but you'll also need to remove it on the [`main.py`](./src/main.py) file and set a new prefix. </br>
+**OWNID** is the bot's ID. It is used as a prefix for the bot (when you're mentioning (@) it). You can remove this field but you'll also need to remove it on the [`main.py`](./src/main.py) file and set a new prefix. </br>
 *More information on how to get the bot ID [here](https://support.discord.com/hc/en-us/articles/206346498).*
 </br></br>
 
@@ -104,6 +104,13 @@ python src/main.py
 | Python 3.12 | ✔ | [![Python 3.8](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/python312.yml) |
 
 </details>
+
+Checking code quality with these actions:
+
+| Actions             | Done | Status |
+|-------------------------|------|--------|
+| Spelling | ✔ | [![Spelling](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/spelling.yml) |
+| CodeQL | ✔ | [![CodeQL](https://github.com/Okaneeee/discord-chatbot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Okaneeee/discord-chatbot/actions/workflows/codeql.yml) |
 
 ## Features
 

@@ -65,7 +65,7 @@
      "context_set": ""
     },
     {"tag": "privacy",
-     "patterns": ["How do you handle my personal information", "How do you handle my data", "How do you handle my personal data", "Is my data secure", "Are my informations secure", "Is my data safe", "Are my informations safe"],
+     "patterns": ["How do you handle my personal information", "How do you handle my data", "How do you handle my personal data", "Is my data secure", "Are my information secure", "Is my data safe", "Are my information safe"],
      "responses": ["As I can't handle the context of conversations ||at least, for now||, I don't and I can't store any personal data. The only data I have is my training data."],
      "context_set": ""
     },

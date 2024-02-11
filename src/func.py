@@ -1,4 +1,7 @@
 import requests
+from logger import Logger
+
+LOGGER = Logger()
 
 def wikisearch(query: str):
     """Searches wikipedia for a given query and returns the first paragraph of the article.
@@ -38,6 +41,7 @@ def which_function(func_to_call: str, query: str):
     query = query.translate({ord(i): None for i in '!.?:;,'})
 
     if func_to_call == 'wikisearch':
+        LOGGER.makeLog(f"Called *wikisearch* function with [{query}]", "INFO")
         i = 1
         while not done:
             lastXWords: str = ' '.join(query.split(" ")[-i:])
