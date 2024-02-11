@@ -7,6 +7,9 @@ basic_model_intents.pkl
 basic_model_words.pkl
 basic_model.keras
 
+# Logs
+[Ll]og[Ss]/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
